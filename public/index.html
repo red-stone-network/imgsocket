@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>ImgSocket</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      ImgSocket
+    </h1>
+    <p>
+      This is a really bad image hosting service.
+    </p>
+    <label for="upload" class="upload">
+      What are you waiting for? UPLOAD A DAMN FILE!
+    </label>
+    <input type="file" onchange="upload(this.files)" id="upload" class="display: none;" accept="image/png, image/jpeg, image/gif"/><br>
+    <sup style="color: grey;">(supports png, jpg, gif)</sup>
+    <br><br>
+    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

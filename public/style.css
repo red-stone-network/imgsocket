@@ -1,0 +1,60 @@
+body {
+  background-color: #000;
+color: white;
+  text-align: center;
+
+  padding: 0 0;
+margin: 0;
+font-family: Roboto, Arial, sans-serif;
+}
+
+.upload {
+  font-weight: bold;
+  color: red;
+  font-size: 24px;
+  text-decoration: underline overline;
+}
+
+.upload:hover {
+  font-weight: bold;
+  color: pink;
+  text-decoration: underline overline;
+}
+
+@keyframes fadein { 
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#bigtext {
+  animation: fadein 2s;
+  padding: 10vh 0;
+}
+#bigbox {
+  width: 100%;
+  background-color: #110000;
+  text-align: center;
+  vertical-align: center;
+  color: #f00;
+  font-size: 10vw;
+  margin: 50px auto 0;
+}
+p {
+  padding: 0 15vw;
+  text-align: center;
+}
+a {
+  color: red;
+}
+input {
+  display: none;
+}
+h1 {
+  animation: fadein 2s;
+  color: red;
+}
