@@ -1,9 +1,9 @@
-# ImgSocket by Redstone Network
+<h1 align="center">ImgSocket by Redstone Network</h1>
 
-An easy to deploy, simple to use image hosting service template.
+<p align="center">An easy to deploy, simple image hosting service.</p>
 
-All made using socket.io.
+<p align="center">All made using socket.io.</p>
 
-[Try it out here.](https://imgsocket.glitch.me)
+<p align="center"><a href="https://imgsocket.glitch.me/index.html">Try it out here.</a></p>
 
-###### ImgSocket is licensed under CC-BY-4.0.
+<h6 align="center"><a href="https://github.com/red-stone-network/imgsocket/blob/main/license.md">ImgSocket is licensed under CC-BY-4.0.</a></h6>
