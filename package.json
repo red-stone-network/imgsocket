@@ -1,0 +1,20 @@
+{
+  "name": "socket-imgsocket",
+  "version": "0.0.1",
+  "description": "amogus",
+  "main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"express": "^4.12.4",
+		"socket.io": "*",
+    "crypto": "*"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"chat"
+	],
+	"license": "MIT"
+}
