@@ -1,10 +1,17 @@
 const socket = io();
 
+function genHexString(len) {
+    const hex = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_+~";
+    let output = '';
+    for (let i = 0; i < len; ++i) {
+        output += hex.charAt(Math.floor(Math.random() * hex.length));
+    }
+    return output;
+}
+
 /* tags */
 if (localStorage.getItem("token") == null) {
-  const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
-
-  localStorage.setItem("token", genRanHex(32));
+  localStorage.setItem("token", genHexString(32));
 }
 
 function shit(data) {
