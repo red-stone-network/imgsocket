@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://imgsocket.glitch.me/icon.png" align="center">
+</p>
 <h1 align="center">ImgSocket by Redstone Network</h1>
 
 <p align="center">An easy to deploy, simple image hosting service.</p>
