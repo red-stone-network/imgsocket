@@ -8,7 +8,7 @@ var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 
 function genHexString(len) {
-    const hex = '0123456789ABCDEF';
+    const hex = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ+~";
     let output = '';
     for (let i = 0; i < len; ++i) {
         output += hex.charAt(Math.floor(Math.random() * hex.length));
@@ -38,7 +38,7 @@ io.on('connection', function (socket) {
     console.log("FILENAME: "+data[2]);
     
     var split = data[2].split(".");
-    var random = genHexString(64);
+    var random = genHexString(20);
     console.log(random);
     if (goodFiletypes.includes(split[1].toLowerCase()) == true) {
       console.log("start");
