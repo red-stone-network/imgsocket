@@ -1,4 +1,5 @@
 const goodFiletypes = ["png","jpg","jpeg","jfif","gif"];
+const bannedTokens = [];
 
 const mntmode = false;
 var express = require('express');
@@ -50,6 +51,14 @@ io.on('connection', function (socket) {
           user: data[0],
           message: [err, random+"."+split[1]]
         });
+        console.log("succ")
+        console.log("end")
+      });
+      var newData = "USER TOKEN: "+data[0]
+      fs.writeFile("public/images/"+random+"."+split[1]+".data", data[1], (err) => {
+        var e2 = err ? "failure" : "success"
+        console.log(e2);
+        
         console.log("succ")
         console.log("end")
       });
